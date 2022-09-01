@@ -1,0 +1,6 @@
+error404
+error404.min
+loader
+loader.min
+toastr
+toastr.min

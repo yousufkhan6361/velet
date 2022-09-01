@@ -1,0 +1,48 @@
+Simple E-commerce
+
+- Merchant Required 
+- Shipping (If any)
+- Tax (If any)
+
+HTML Link
+
+https://custom-demo.org/parker_dev/
+
+                Update 1 (10 working days)
+                    - Admin Setup
+                    - HTML / Framework Setup
+                    - HTML breaking 
+                    - Logo Management 
+                    - Banner Management
+                    - CMS Management
+                    - Testimonial Management
+                    - News letter Manament 
+                    - Categort Managment
+                    - Product Managment
+                    - color management 
+                    - size management 
+                    - registration
+                    - signin / logout
+                    - forgot password
+
+                Update 2 (5 working days)
+                                - Product Listing 
+                                - Product Detail Page
+                                - Add to cart
+                                - Checkout steps
+                                - Merchant Integration (Merchant Required)
+                                - Shipping (If Any)
+                        
+                Update 3 (5 working days)
+                                - Account setup 
+                    - account setting 
+                    - reset password 
+                                - Order History
+                                - Order Invoice 
+                                - Order Tracking 
+                                - Save billing address
+                    
+                
+
+2 day testing 
+1 day bugs resolving

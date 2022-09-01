@@ -1,0 +1,5 @@
+{
+    "require": {
+        "dan/shopify-api": "v0.9.9.*"
+    }
+}

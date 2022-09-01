@@ -1,0 +1,104 @@
+=========== 20-may-2020 ===========
+
+assets/front_assets/css/custom.min.css
+assets/front_assets/js/custom.min.js
+
+application/config/routes.php
+
+application/controllers/admin/Color.php
+application/controllers/admin/Product.php
+application/controllers/admin/Style.php
+application/controllers/Accessories.php
+application/controllers/Checkout.php
+application/controllers/Favorite.php
+application/controllers/Merchandise.php
+application/controllers/User.php
+application/controllers/Shop.php
+
+application/models/Model_brand.php
+application/models/Model_color.php
+application/models/Model_comment.php
+application/models/Model_category.php
+application/models/Model_favorite.php
+application/models/Model_product.php
+application/models/Model_product_color.php
+application/models/Model_order.php
+application/models/Model_signup.php
+application/models/Model_style.php
+
+application/views/_layout/admin/left_menu.php
+application/views/_layout/email_template/welcome.php
+application/views/_layout/header.php
+application/views/_layout/footer.php
+application/views/accessories/index.php
+application/views/accessories/detail.php
+application/views/checkout/index.php
+application/views/checkout/step2.php
+application/views/merchandise/index.php
+application/views/merchandise/detail.php
+application/views/shop/index.php
+application/views/shop/detail.php
+application/views/user/login_sigup_modal.php
+application/views/user/modal_forgot_password.php
+application/views/widgets/wishlist_script.php
+
+
+- Add table "sbf_signup"
+- Add table "sbf_style"
+- Add table "sbf_color"
+- Add table "sbf_product_color"
+- Add table ": sbf_favorite"
+- ALTER TABLE `sbf_product` ADD COLUMN `product_style_id` INT(10) UNSIGNED NOT NULL DEFAULT '0' AFTER `product_brand_id`;
+- ALTER TABLE `sbf_comment` ADD COLUMN `comment_subject` VARCHAR(255) NULL DEFAULT NULL AFTER `comment_name`,ADD COLUMN `comment_rating` INT NULL DEFAULT NULL AFTER `comment_subject`;
+
+
+===================== 26-May-2020 =====================
+assets/front_assets/css/account.css
+assets/front_assets/css/custom.min.css
+
+application/config/routes.php
+
+application/core/MY_Controller.php
+
+application/controllers/Account.php
+application/controllers/Home.php
+application/controllers/Checkout.php
+application/controllers/Season.php
+application/controllers/admin/Product.php
+
+application/models/Model_favorite.php
+application/models/Model_product.php
+application/models/Model_signup.php
+
+application/views/_layout/header.php
+application/views/_layout/footer.php
+
+application/views/account/changepassword.php
+application/views/account/my_favorites.php
+application/views/account/index.php
+application/views/account/info.php
+application/views/account/orderhistory.php
+application/views/checkout/index.php
+application/views/checkout/step2.php
+application/views/season/index.php
+application/views/widgets/banner.php
+application/views/widgets/feature_products.php
+application/views/widgets/payment/stripe_pro.php
+
+- ALTER TABLE `sbf_signup` ADD COLUMN `signup_city` VARCHAR(30) NULL DEFAULT NULL AFTER `signup_country`;
+
+
+===================== 29-May-2020 =====================
+assets/front_assets/css/custom.min.css
+
+application/controllers/admin/Comment.php
+application/controllers/Accessories.php
+application/controllers/Merchandise.php
+application/controllers/Shop.php
+
+application/models/Model_comment.php
+application/models/Model_signup.php
+
+application/views/account/invoiceTemplate.php
+application/views/checkout/step2.php
+

@@ -1,0 +1,6 @@
+[28-Dec-2020 15:57:29 US/Eastern] PHP Parse error:  syntax error, unexpected ']', expecting ',' or ';' in /home/demologocottage/public_html/hard_oak_dev/application/views/home/index.php on line 18
+[28-Dec-2020 15:58:02 US/Eastern] PHP Parse error:  syntax error, unexpected ']', expecting ',' or ';' in /home/demologocottage/public_html/hard_oak_dev/application/views/home/index.php on line 18
+[14-Jul-2021 08:05:10 America/New_York] PHP Fatal error:  Cannot redeclare Account::resetpasswordclient() in /home/thentomt/public_html/application/controllers/Account.php on line 1055
+[14-Jul-2021 08:05:12 America/New_York] PHP Fatal error:  Cannot redeclare Account::resetpasswordclient() in /home/thentomt/public_html/application/controllers/Account.php on line 1055
+[14-Jul-2021 08:05:33 America/New_York] PHP Fatal error:  Cannot redeclare Account::resetpasswordclient() in /home/thentomt/public_html/application/controllers/Account.php on line 1055
+[14-Jul-2021 08:05:43 America/New_York] PHP Fatal error:  Cannot redeclare Account::resetpasswordclient() in /home/thentomt/public_html/application/controllers/Account.php on line 1055
