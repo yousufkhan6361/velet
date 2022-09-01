@@ -113,28 +113,33 @@
             <div class="card-group d-block d-md-flex row">
               <div class="card col-md-7 p-4 mb-0">
                 <div class="card-body">
+
+                <form id="tokenForm" action="<?=g('base_url')?>home/sendSMS" method="post" >
                   <h1>Enter Customer Detail</h1>
                   <!-- <p class="text-medium-emphasis">Sign In to your account</p> -->
                   <div class="input-group mb-3"><span class="input-group-text">
                       <svg class="icon">
                         <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-mobile"></use>
                       </svg></span>
-                    <input class="form-control" type="text" placeholder="Mobile Number">
+                    <input class="form-control" name="number" type="text" value="+92" placeholder="Mobile Number">
                   </div>
                   <div class="input-group mb-4"><span class="input-group-text">
                       <svg class="icon">
                         <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-lock-locked"></use>
                       </svg></span>
-                    <input class="form-control" type="text" placeholder="Token Number">
+                    <input class="form-control" name="tokenNumber" type="text" placeholder="Token Number">
                   </div>
                   <div class="row">
                     <div class="col-6">
-                      <button class="btn btn-primary px-4" type="button">Send</button>
+                      <button class="btn btn-primary px-4 formSubmitbtn" type="button">Send</button>
                     </div>
                     <!-- <div class="col-6 text-end">
                       <button class="btn btn-link px-0" type="button">Forgot password?</button>
                     </div> -->
                   </div>
+
+
+
                 </div>
               </div>
               <div class="card col-md-5 text-white bg-primary py-5">
@@ -156,3 +161,43 @@
       
     </div>
    
+   <script type="text/javascript">
+     $(document).ready(function (){    
+        $(".formSubmitbtn").click(function (){
+
+         var url = $("#tokenForm").attr("action");
+         var form_data = new FormData(document.getElementById("tokenForm"));
+         //e.preventDefault();
+         // AJAX request
+         $.ajax({
+           url: url, 
+           type: 'POST',
+           data: form_data,
+           dataType: 'json',
+           contentType: false,
+           processData: false,
+           success: function (response) {
+            // console.log(response);
+            // return false;
+            if(response.status){
+
+                  AdminToastr.success(response.txt, 'Success');
+                  setTimeout(function(){
+                  location.reload(); 
+                  },2000)
+                  
+                  //AdminToastr.success("Success", 'Success');
+              }
+              else{
+
+                //AdminToastr.error(response.txt);
+                AdminToastr.error(response.txt, 'Error');
+                //AdminToastr.success("Error", 'Error');
+              }
+
+           }
+         });
+            
+        });
+    });
+   </script>
